@@ -1,0 +1,58 @@
+{
+  "name": "di_skeleton",
+  "author": "",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "license": "UNLICENSED",
+  "entry": "src/index.jsx",
+  "output": {
+    "filename": "skeleton.js",
+    "filenameMin": "skeleton.min.js",
+    "library": "SKELETON",
+    "path": "dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/di3/di_skeleton_react.git"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-eslint": "^8.0.2",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "compression-webpack-plugin": "^1.0.1",
+    "di_request_fake": "file:./lib/di_request_fake",
+    "enzyme": "^3.1.1",
+    "enzyme-adapter-react-16": "^1.0.4",
+    "eslint": "^4.10.0",
+    "eslint-plugin-react": "^7.4.0",
+    "jest": "^21.2.1",
+    "prop-types": "^15.6.0",
+    "react-hot-loader": "^3.1.2",
+    "svg-react-loader": "^0.4.5",
+    "webpack": "^3.8.1",
+    "webpack-dev-server": "^2.9.4"
+  },
+  "scripts": {
+    "start": "npm run dev",
+    "build": "npm run lint && npm run build:clear && npm run build:min",
+    "build:dev": "webpack --config webpack.config-production.js",
+    "build:clear": "NODE_ENV=production webpack --config webpack.config-production.js",
+    "build:min": "NODE_ENV=production MINIFY=yes GZ=yes webpack --config webpack.config-production.js",
+    "dev": "webpack-dev-server --progress --color",
+    "lint": "eslint src; exit 0",
+    "test": "jest --config jest.config.json"
+  },
+  "dependencies": {
+    "di_request": "file:./lib/js_lib/di_request",
+    "di_media_device": "file:./lib/js_lib/di_media_device",
+    "di_merge": "file:./lib/js_lib/di_merge",
+    "di_store": "file:./lib/js_lib/di_store",
+    "immutable": "^3.8.2",
+    "react": "^16.1.0",
+    "react-dom": "^16.1.0",
+    "react-redux": "^5.0.6"
+  }
+}

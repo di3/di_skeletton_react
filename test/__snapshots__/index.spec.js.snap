@@ -1,0 +1,187 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`initial snapshots with async timeout 1`] = `
+<div
+  id="SKELETON2"
+>
+  <div
+    style="font-family: Monospace; width: 200px; display: block; margin: auto; font-size: 250%; text-align: center; color: rgb(86, 47, 79);"
+  >
+    <span
+      style="font-weight: bold; display: block;"
+    >
+      skeleton
+    </span>
+    <span
+      style="font-weight: bold; display: block;"
+    >
+      test
+    </span>
+    <span
+      style="padding: 10px; display: block; font-size: 150%;"
+    >
+      0
+    </span>
+    <div
+      style="font-family: Monospace; display: block; margin: auto; font-size: 120%; border: 4px solid #562f4f; background-color: rgb(150, 111, 143); color: rgb(86, 47, 79); font-weight: bold; border-radius: 3px;"
+    >
+      reset
+    </div>
+  </div>
+</div>
+`;
+
+exports[`initial snapshots with async timeout 2`] = `
+<div
+  id="SKELETON2"
+>
+  <div
+    style="font-family: Monospace; width: 200px; display: block; margin: auto; font-size: 250%; text-align: center; color: rgb(86, 47, 79);"
+  >
+    <span
+      style="font-weight: bold; display: block;"
+    >
+      skeleton
+    </span>
+    <span
+      style="font-weight: bold; display: block;"
+    >
+      test
+    </span>
+    <span
+      style="padding: 10px; display: block; font-size: 150%;"
+    >
+      12
+    </span>
+    <div
+      style="font-family: Monospace; display: block; margin: auto; font-size: 120%; border: 4px solid #562f4f; background-color: rgb(150, 111, 143); color: rgb(86, 47, 79); font-weight: bold; border-radius: 3px;"
+    >
+      reset
+    </div>
+  </div>
+</div>
+`;
+
+exports[`initial snapshots with timeout 1`] = `
+<div
+  id="SKELETON"
+>
+  <div
+    style="font-family: Monospace; width: 200px; display: block; margin: auto; font-size: 250%; text-align: center; color: rgb(86, 47, 79);"
+  >
+    <span
+      style="font-weight: bold; display: block;"
+    >
+      skeleton
+    </span>
+    <span
+      style="font-weight: bold; display: block;"
+    >
+      skeleton
+    </span>
+    <span
+      style="padding: 10px; display: block; font-size: 150%;"
+    >
+      0
+    </span>
+    <div
+      style="font-family: Monospace; display: block; margin: auto; font-size: 120%; border: 4px solid #562f4f; background-color: rgb(150, 111, 143); color: rgb(86, 47, 79); font-weight: bold; border-radius: 3px;"
+    >
+      reset
+    </div>
+  </div>
+</div>
+`;
+
+exports[`initial snapshots with timeout 2`] = `
+<div
+  id="SKELETON"
+>
+  <div
+    style="font-family: Monospace; width: 200px; display: block; margin: auto; font-size: 250%; text-align: center; color: rgb(86, 47, 79);"
+  >
+    <span
+      style="font-weight: bold; display: block;"
+    >
+      skeleton
+    </span>
+    <span
+      style="font-weight: bold; display: block;"
+    >
+      test
+    </span>
+    <span
+      style="padding: 10px; display: block; font-size: 150%;"
+    >
+      2
+    </span>
+    <div
+      style="font-family: Monospace; display: block; margin: auto; font-size: 120%; border: 4px solid #562f4f; background-color: rgb(150, 111, 143); color: rgb(86, 47, 79); font-weight: bold; border-radius: 3px;"
+    >
+      reset
+    </div>
+  </div>
+</div>
+`;
+
+exports[`responsive snapshots with timeout 1`] = `
+<div
+  id="SKELETON3"
+>
+  <div
+    style="font-family: Monospace; width: 200px; display: block; margin: auto; font-size: 250%; text-align: center; color: rgb(86, 47, 79);"
+  >
+    <span
+      style="font-weight: bold; display: block;"
+    >
+      skeleton
+    </span>
+    <span
+      style="font-weight: bold; display: block;"
+    >
+      test
+    </span>
+    <span
+      style="padding: 10px; display: block; font-size: 150%;"
+    >
+      0
+    </span>
+    <div
+      style="font-family: Monospace; display: block; margin: auto; font-size: 120%; border: 4px solid #562f4f; background-color: rgb(150, 111, 143); color: rgb(86, 47, 79); font-weight: bold; border-radius: 3px;"
+    >
+      reset
+    </div>
+  </div>
+</div>
+`;
+
+exports[`responsive snapshots with timeout 2`] = `
+<div
+  id="SKELETON3"
+>
+  <div
+    style="font-family: Monospace; width: 200px; display: block; margin: auto; font-size: 180%; text-align: center; color: rgb(86, 47, 79);"
+  >
+    <span
+      style="font-weight: bold; display: block;"
+    >
+      skeleton
+    </span>
+    <span
+      style="font-weight: bold; display: block;"
+    >
+      test
+    </span>
+    <span
+      style="padding: 10px; display: block; font-size: 150%;"
+    >
+      6
+    </span>
+    <div
+      style="font-family: Monospace; display: block; margin: auto; font-size: 120%; border: 4px solid #562f4f; background-color: rgb(150, 111, 143); color: rgb(86, 47, 79); font-weight: bold; border-radius: 3px;"
+    >
+      reset
+    </div>
+  </div>
+</div>
+`;

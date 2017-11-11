@@ -1,0 +1,15 @@
+{
+  "moduleFileExtensions": [
+    "js",
+    "jsx"
+  ],
+  "moduleNameMapper": {
+    "Button": "<rootDir>/src/elements/Button.jsx",
+    "App": "<rootDir>/src/components/App.jsx",
+    "index": "<rootDir>/src/index.jsx"
+  },
+  "setupFiles": [
+    "<rootDir>/test/__setup__/shim.js",
+    "<rootDir>/test/__setup__/setup.js"
+  ]
+}

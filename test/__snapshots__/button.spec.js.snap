@@ -1,0 +1,271 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button render should handle hover 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Button
+    onClick={[Function]}
+  >
+    reset
+  </Button>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": "reset",
+      "onClick": [Function],
+      "onMouseLeave": [Function],
+      "onMouseOver": [Function],
+      "style": Object {
+        "KhtmlUserSelect": "none",
+        "MozUserSelect": "none",
+        "OUserSelect": "none",
+        "WebkitTouchCallout": "none",
+        "WebkitUserSelect": "none",
+        "backgroundColor": "#966f8f",
+        "border": "4px solid #562f4f",
+        "color": "#562f4f",
+        "cursor": null,
+        "display": "block",
+        "fontFamily": "Monospace",
+        "fontSize": "180%",
+        "margin": "auto",
+        "msUserSelect": "none",
+        "userSelect": "none",
+      },
+    },
+    "ref": null,
+    "rendered": "reset",
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": "reset",
+        "onClick": [Function],
+        "onMouseLeave": [Function],
+        "onMouseOver": [Function],
+        "style": Object {
+          "KhtmlUserSelect": "none",
+          "MozUserSelect": "none",
+          "OUserSelect": "none",
+          "WebkitTouchCallout": "none",
+          "WebkitUserSelect": "none",
+          "backgroundColor": "#966f8f",
+          "border": "4px solid #562f4f",
+          "color": "#562f4f",
+          "cursor": null,
+          "display": "block",
+          "fontFamily": "Monospace",
+          "fontSize": "180%",
+          "margin": "auto",
+          "msUserSelect": "none",
+          "userSelect": "none",
+        },
+      },
+      "ref": null,
+      "rendered": "reset",
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
+
+exports[`Button render should handle hover 2`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Button
+    onClick={[Function]}
+  >
+    reset
+  </Button>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": "reset",
+      "onClick": [Function],
+      "onMouseLeave": [Function],
+      "onMouseOver": [Function],
+      "style": Object {
+        "KhtmlUserSelect": "none",
+        "MozUserSelect": "none",
+        "OUserSelect": "none",
+        "WebkitTouchCallout": "none",
+        "WebkitUserSelect": "none",
+        "backgroundColor": "#4f6f76",
+        "border": "4px solid #2f4f56",
+        "color": "#2f4f56",
+        "cursor": "pointer",
+        "display": "block",
+        "fontFamily": "Monospace",
+        "fontSize": "180%",
+        "margin": "auto",
+        "msUserSelect": "none",
+        "userSelect": "none",
+      },
+    },
+    "ref": null,
+    "rendered": "reset",
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": "reset",
+        "onClick": [Function],
+        "onMouseLeave": [Function],
+        "onMouseOver": [Function],
+        "style": Object {
+          "KhtmlUserSelect": "none",
+          "MozUserSelect": "none",
+          "OUserSelect": "none",
+          "WebkitTouchCallout": "none",
+          "WebkitUserSelect": "none",
+          "backgroundColor": "#4f6f76",
+          "border": "4px solid #2f4f56",
+          "color": "#2f4f56",
+          "cursor": "pointer",
+          "display": "block",
+          "fontFamily": "Monospace",
+          "fontSize": "180%",
+          "margin": "auto",
+          "msUserSelect": "none",
+          "userSelect": "none",
+        },
+      },
+      "ref": null,
+      "rendered": "reset",
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
+
+exports[`Button render should handle hover 3`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Button
+    onClick={[Function]}
+  >
+    reset
+  </Button>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": "reset",
+      "onClick": [Function],
+      "onMouseLeave": [Function],
+      "onMouseOver": [Function],
+      "style": Object {
+        "KhtmlUserSelect": "none",
+        "MozUserSelect": "none",
+        "OUserSelect": "none",
+        "WebkitTouchCallout": "none",
+        "WebkitUserSelect": "none",
+        "backgroundColor": "#966f8f",
+        "border": "4px solid #562f4f",
+        "color": "#562f4f",
+        "cursor": null,
+        "display": "block",
+        "fontFamily": "Monospace",
+        "fontSize": "180%",
+        "margin": "auto",
+        "msUserSelect": "none",
+        "userSelect": "none",
+      },
+    },
+    "ref": null,
+    "rendered": "reset",
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": "reset",
+        "onClick": [Function],
+        "onMouseLeave": [Function],
+        "onMouseOver": [Function],
+        "style": Object {
+          "KhtmlUserSelect": "none",
+          "MozUserSelect": "none",
+          "OUserSelect": "none",
+          "WebkitTouchCallout": "none",
+          "WebkitUserSelect": "none",
+          "backgroundColor": "#966f8f",
+          "border": "4px solid #562f4f",
+          "color": "#562f4f",
+          "cursor": null,
+          "display": "block",
+          "fontFamily": "Monospace",
+          "fontSize": "180%",
+          "margin": "auto",
+          "msUserSelect": "none",
+          "userSelect": "none",
+        },
+      },
+      "ref": null,
+      "rendered": "reset",
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
