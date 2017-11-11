@@ -8164,7 +8164,7 @@ object-assign
                     status: _constants.SKELETON_STATUS_LOADING
                 }
             }), (0, _di_request2.default)({
-                url: "/index.json"
+                url: "index.json"
             }).then(function(r1) {
                 return dispatch({
                     type: _constants.SKELETON_TYPE_CHANGE,

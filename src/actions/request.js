@@ -8,7 +8,7 @@ import {
 
 export default () => (dispatch) => {
   dispatch({type: SKELETON_TYPE_CHANGE, data: {status: SKELETON_STATUS_LOADING}});
-  request({url: "/index.json"})
+  request({url: "index.json"})
     .then((r1) => {
       dispatch({type: SKELETON_TYPE_CHANGE, data: {status: SKELETON_STATUS_INIT}})
       return r1.get();
