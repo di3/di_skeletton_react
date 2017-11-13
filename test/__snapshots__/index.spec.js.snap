@@ -15,7 +15,7 @@ exports[`initial snapshots with async timeout 1`] = `
     <span
       style="font-weight: bold; display: block;"
     >
-      test
+      skeleton
     </span>
     <span
       style="padding: 10px; display: block; font-size: 150%;"
@@ -46,7 +46,7 @@ exports[`initial snapshots with async timeout 2`] = `
     <span
       style="font-weight: bold; display: block;"
     >
-      test
+      skeleton
     </span>
     <span
       style="padding: 10px; display: block; font-size: 150%;"
@@ -108,7 +108,7 @@ exports[`initial snapshots with timeout 2`] = `
     <span
       style="font-weight: bold; display: block;"
     >
-      test
+      skeleton
     </span>
     <span
       style="padding: 10px; display: block; font-size: 150%;"
@@ -139,7 +139,7 @@ exports[`responsive snapshots with timeout 1`] = `
     <span
       style="font-weight: bold; display: block;"
     >
-      test
+      skeleton
     </span>
     <span
       style="padding: 10px; display: block; font-size: 150%;"
@@ -170,7 +170,7 @@ exports[`responsive snapshots with timeout 2`] = `
     <span
       style="font-weight: bold; display: block;"
     >
-      test
+      skeleton
     </span>
     <span
       style="padding: 10px; display: block; font-size: 150%;"

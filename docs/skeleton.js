@@ -119,7 +119,7 @@ var SKELETON = function(modules) {
         });
         done || res !== IS_ERROR || (done = !0, reject(promise, LAST_ERROR));
     }
-    var asap = __webpack_require__(25), LAST_ERROR = null, IS_ERROR = {};
+    var asap = __webpack_require__(26), LAST_ERROR = null, IS_ERROR = {};
     module.exports = Promise, Promise._47 = null, Promise._71 = null, Promise._44 = noop, 
     Promise.prototype.then = function(onFulfilled, onRejected) {
         if (this.constructor !== Promise) return safeThen(this, onFulfilled, onRejected);
@@ -152,6 +152,20 @@ var SKELETON = function(modules) {
         "object" == typeof window && (g = window);
     }
     module.exports = g;
+}, function(module, exports, __webpack_require__) {
+    "use strict";
+    Object.defineProperty(exports, "__esModule", {
+        value: !0
+    });
+    var _constants = __webpack_require__(0);
+    exports.default = function(data) {
+        return function(dispatch) {
+            return dispatch({
+                type: _constants.SKELETON_TYPE_CHANGE,
+                data: data
+            });
+        };
+    };
 }, function(module, __webpack_exports__, __webpack_require__) {
     "use strict";
     function warning(message) {
@@ -166,8 +180,8 @@ var SKELETON = function(modules) {
     Object.defineProperty(__webpack_exports__, "__esModule", {
         value: !0
     });
-    var __WEBPACK_IMPORTED_MODULE_0__createStore__ = __webpack_require__(17), __WEBPACK_IMPORTED_MODULE_1__combineReducers__ = __webpack_require__(66), __WEBPACK_IMPORTED_MODULE_2__bindActionCreators__ = __webpack_require__(67), __WEBPACK_IMPORTED_MODULE_3__applyMiddleware__ = __webpack_require__(68), __WEBPACK_IMPORTED_MODULE_4__compose__ = __webpack_require__(20);
-    __webpack_require__(19);
+    var __WEBPACK_IMPORTED_MODULE_0__createStore__ = __webpack_require__(18), __WEBPACK_IMPORTED_MODULE_1__combineReducers__ = __webpack_require__(66), __WEBPACK_IMPORTED_MODULE_2__bindActionCreators__ = __webpack_require__(67), __WEBPACK_IMPORTED_MODULE_3__applyMiddleware__ = __webpack_require__(68), __WEBPACK_IMPORTED_MODULE_4__compose__ = __webpack_require__(21);
+    __webpack_require__(20);
     __webpack_require__.d(__webpack_exports__, "createStore", function() {
         return __WEBPACK_IMPORTED_MODULE_0__createStore__.b;
     }), __webpack_require__.d(__webpack_exports__, "combineReducers", function() {
@@ -208,7 +222,7 @@ var SKELETON = function(modules) {
     Object.defineProperty(exports, "__esModule", {
         value: !0
     });
-    var _redux = __webpack_require__(6), _reduxThunk = __webpack_require__(83), _reduxThunk2 = function(obj) {
+    var _redux = __webpack_require__(7), _reduxThunk = __webpack_require__(83), _reduxThunk2 = function(obj) {
         return obj && obj.__esModule ? obj : {
             default: obj
         };
@@ -286,7 +300,7 @@ object-assign
     Object.defineProperty(__webpack_exports__, "__esModule", {
         value: !0
     });
-    var __WEBPACK_IMPORTED_MODULE_0__components_Provider__ = __webpack_require__(44), __WEBPACK_IMPORTED_MODULE_1__components_connectAdvanced__ = __webpack_require__(16), __WEBPACK_IMPORTED_MODULE_2__connect_connect__ = __webpack_require__(51);
+    var __WEBPACK_IMPORTED_MODULE_0__components_Provider__ = __webpack_require__(44), __WEBPACK_IMPORTED_MODULE_1__components_connectAdvanced__ = __webpack_require__(17), __WEBPACK_IMPORTED_MODULE_2__connect_connect__ = __webpack_require__(51);
     __webpack_require__.d(__webpack_exports__, "Provider", function() {
         return __WEBPACK_IMPORTED_MODULE_0__components_Provider__.b;
     }), __webpack_require__.d(__webpack_exports__, "createProvider", function() {
@@ -305,7 +319,7 @@ object-assign
     }), __webpack_require__.d(__webpack_exports__, "a", function() {
         return storeShape;
     });
-    var __WEBPACK_IMPORTED_MODULE_0_prop_types__ = __webpack_require__(14), __WEBPACK_IMPORTED_MODULE_0_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_prop_types__), subscriptionShape = __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.shape({
+    var __WEBPACK_IMPORTED_MODULE_0_prop_types__ = __webpack_require__(15), __WEBPACK_IMPORTED_MODULE_0_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_prop_types__), subscriptionShape = __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.shape({
         trySubscribe: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.func.isRequired,
         tryUnsubscribe: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.func.isRequired,
         notifyNestedSubs: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.func.isRequired,
@@ -437,7 +451,7 @@ object-assign
     }
     __webpack_exports__.a = connectAdvanced;
     var __WEBPACK_IMPORTED_MODULE_0_hoist_non_react_statics__ = __webpack_require__(48), __WEBPACK_IMPORTED_MODULE_0_hoist_non_react_statics___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_hoist_non_react_statics__), __WEBPACK_IMPORTED_MODULE_1_invariant__ = __webpack_require__(49), __WEBPACK_IMPORTED_MODULE_1_invariant___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_invariant__), __WEBPACK_IMPORTED_MODULE_2_react__ = __webpack_require__(1), __WEBPACK_IMPORTED_MODULE_3__utils_Subscription__ = (__webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_react__), 
-    __webpack_require__(50)), __WEBPACK_IMPORTED_MODULE_4__utils_PropTypes__ = __webpack_require__(15), _extends = Object.assign || function(target) {
+    __webpack_require__(50)), __WEBPACK_IMPORTED_MODULE_4__utils_PropTypes__ = __webpack_require__(16), _extends = Object.assign || function(target) {
         for (var i = 1; i < arguments.length; i++) {
             var source = arguments[i];
             for (var key in source) Object.prototype.hasOwnProperty.call(source, key) && (target[key] = source[key]);
@@ -521,7 +535,7 @@ object-assign
     __webpack_require__.d(__webpack_exports__, "a", function() {
         return ActionTypes;
     }), __webpack_exports__.b = createStore;
-    var __WEBPACK_IMPORTED_MODULE_0_lodash_es_isPlainObject__ = __webpack_require__(7), __WEBPACK_IMPORTED_MODULE_1_symbol_observable__ = __webpack_require__(62), __WEBPACK_IMPORTED_MODULE_1_symbol_observable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_symbol_observable__), ActionTypes = {
+    var __WEBPACK_IMPORTED_MODULE_0_lodash_es_isPlainObject__ = __webpack_require__(8), __WEBPACK_IMPORTED_MODULE_1_symbol_observable__ = __webpack_require__(62), __WEBPACK_IMPORTED_MODULE_1_symbol_observable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_symbol_observable__), ActionTypes = {
         INIT: "@@redux/INIT"
     };
 }, function(module, __webpack_exports__, __webpack_require__) {
@@ -571,10 +585,10 @@ object-assign
         };
     }
     __webpack_exports__.a = wrapMapToPropsConstant, __webpack_exports__.b = wrapMapToPropsFunc;
-    __webpack_require__(22);
+    __webpack_require__(23);
 }, function(module, __webpack_exports__, __webpack_require__) {
     "use strict";
-    __webpack_require__(7), __webpack_require__(5);
+    __webpack_require__(8), __webpack_require__(6);
 }, function(module, exports, __webpack_require__) {
     "use strict";
     function _interopRequireDefault(obj) {
@@ -595,7 +609,7 @@ object-assign
     Object.defineProperty(exports, "__esModule", {
         value: !0
     }), exports.config = exports.ERROR_REJECT = exports.ERROR_STATUS = exports.ERROR_JSON = exports.ERROR_TIMEOUT = void 0;
-    var _di_query_url = __webpack_require__(73), _di_query_url2 = _interopRequireDefault(_di_query_url), _di_query_string = __webpack_require__(24), _di_query_string2 = _interopRequireDefault(_di_query_string), _di_is_string = __webpack_require__(8), _di_is_string2 = _interopRequireDefault(_di_is_string), _promise = __webpack_require__(74), _promise2 = _interopRequireDefault(_promise), _constants = __webpack_require__(82);
+    var _di_query_url = __webpack_require__(73), _di_query_url2 = _interopRequireDefault(_di_query_url), _di_query_string = __webpack_require__(25), _di_query_string2 = _interopRequireDefault(_di_query_string), _di_is_string = __webpack_require__(9), _di_is_string2 = _interopRequireDefault(_di_is_string), _promise = __webpack_require__(74), _promise2 = _interopRequireDefault(_promise), _constants = __webpack_require__(82);
     exports.ERROR_TIMEOUT = _constants.ERROR_TIMEOUT, exports.ERROR_JSON = _constants.ERROR_JSON, 
     exports.ERROR_STATUS = _constants.ERROR_STATUS, exports.ERROR_REJECT = _constants.ERROR_REJECT;
     var config = exports.config = function(settings) {
@@ -3033,20 +3047,6 @@ object-assign
             fromJS: fromJS
         };
     });
-}, function(module, exports, __webpack_require__) {
-    "use strict";
-    Object.defineProperty(exports, "__esModule", {
-        value: !0
-    });
-    var _constants = __webpack_require__(0);
-    exports.default = function(data) {
-        return function(dispatch) {
-            return dispatch({
-                type: _constants.SKELETON_TYPE_CHANGE,
-                data: data
-            });
-        };
-    };
 }, function(module, exports) {
     function isObject(value) {
         var type = typeof value;
@@ -3072,8 +3072,8 @@ object-assign
             default: obj
         };
     }
-    var _react = __webpack_require__(1), _react2 = _interopRequireDefault(_react), _reactDom = __webpack_require__(34), _reactRedux = __webpack_require__(13), _di_request = __webpack_require__(23), _di_store = (_interopRequireDefault(_di_request), 
-    __webpack_require__(9)), _di_store2 = _interopRequireDefault(_di_store), _skeleton = __webpack_require__(84), _skeleton2 = _interopRequireDefault(_skeleton), _init = __webpack_require__(85), _init2 = _interopRequireDefault(_init), _App = __webpack_require__(87), _App2 = _interopRequireDefault(_App), _constants = __webpack_require__(0);
+    var _react = __webpack_require__(1), _react2 = _interopRequireDefault(_react), _reactDom = __webpack_require__(34), _reactRedux = __webpack_require__(14), _di_request = __webpack_require__(24), _di_store = (_interopRequireDefault(_di_request), 
+    __webpack_require__(10)), _di_store2 = _interopRequireDefault(_di_store), _skeleton = __webpack_require__(84), _skeleton2 = _interopRequireDefault(_skeleton), _init = __webpack_require__(85), _init2 = _interopRequireDefault(_init), _App = __webpack_require__(87), _App2 = _interopRequireDefault(_App), _constants = __webpack_require__(0);
     _di_store2.default.inject(_constants.SKELETON_STORE, _skeleton2.default), module.exports = {
         create: function(config) {
             _di_store2.default.dispatch((0, _init2.default)(config));
@@ -3193,7 +3193,7 @@ object-assign
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
-    var m = __webpack_require__(11), n = __webpack_require__(12), p = __webpack_require__(3), r = {
+    var m = __webpack_require__(12), n = __webpack_require__(13), p = __webpack_require__(3), r = {
         isMounted: function() {
             return !1;
         },
@@ -5965,7 +5965,7 @@ object-assign
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
-    var aa = __webpack_require__(1), m = __webpack_require__(36), A = __webpack_require__(11), B = __webpack_require__(3), ca = __webpack_require__(37), da = __webpack_require__(38), ea = __webpack_require__(39), ha = __webpack_require__(40), ia = __webpack_require__(43), C = __webpack_require__(12);
+    var aa = __webpack_require__(1), m = __webpack_require__(36), A = __webpack_require__(12), B = __webpack_require__(3), ca = __webpack_require__(37), da = __webpack_require__(38), ea = __webpack_require__(39), ha = __webpack_require__(40), ia = __webpack_require__(43), C = __webpack_require__(13);
     aa || D("227");
     var la = {
         children: !0,
@@ -7355,8 +7355,8 @@ object-assign
     }
     __webpack_exports__.a = createProvider;
     var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(1), __WEBPACK_IMPORTED_MODULE_1_prop_types__ = (__webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__), 
-    __webpack_require__(14)), __WEBPACK_IMPORTED_MODULE_1_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_prop_types__), __WEBPACK_IMPORTED_MODULE_2__utils_PropTypes__ = __webpack_require__(15);
-    __webpack_require__(5);
+    __webpack_require__(15)), __WEBPACK_IMPORTED_MODULE_1_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_prop_types__), __WEBPACK_IMPORTED_MODULE_2__utils_PropTypes__ = __webpack_require__(16);
+    __webpack_require__(6);
     __webpack_exports__.b = createProvider();
 }, function(module, exports, __webpack_require__) {
     "use strict";
@@ -7535,7 +7535,7 @@ object-assign
     function strictEqual(a, b) {
         return a === b;
     }
-    var __WEBPACK_IMPORTED_MODULE_0__components_connectAdvanced__ = __webpack_require__(16), __WEBPACK_IMPORTED_MODULE_1__utils_shallowEqual__ = __webpack_require__(52), __WEBPACK_IMPORTED_MODULE_2__mapDispatchToProps__ = __webpack_require__(53), __WEBPACK_IMPORTED_MODULE_3__mapStateToProps__ = __webpack_require__(69), __WEBPACK_IMPORTED_MODULE_4__mergeProps__ = __webpack_require__(70), __WEBPACK_IMPORTED_MODULE_5__selectorFactory__ = __webpack_require__(71), _extends = Object.assign || function(target) {
+    var __WEBPACK_IMPORTED_MODULE_0__components_connectAdvanced__ = __webpack_require__(17), __WEBPACK_IMPORTED_MODULE_1__utils_shallowEqual__ = __webpack_require__(52), __WEBPACK_IMPORTED_MODULE_2__mapDispatchToProps__ = __webpack_require__(53), __WEBPACK_IMPORTED_MODULE_3__mapStateToProps__ = __webpack_require__(69), __WEBPACK_IMPORTED_MODULE_4__mergeProps__ = __webpack_require__(70), __WEBPACK_IMPORTED_MODULE_5__selectorFactory__ = __webpack_require__(71), _extends = Object.assign || function(target) {
         for (var i = 1; i < arguments.length; i++) {
             var source = arguments[i];
             for (var key in source) Object.prototype.hasOwnProperty.call(source, key) && (target[key] = source[key]);
@@ -7595,14 +7595,14 @@ object-assign
             return Object(__WEBPACK_IMPORTED_MODULE_0_redux__.bindActionCreators)(mapDispatchToProps, dispatch);
         }) : void 0;
     }
-    var __WEBPACK_IMPORTED_MODULE_0_redux__ = __webpack_require__(6), __WEBPACK_IMPORTED_MODULE_1__wrapMapToProps__ = __webpack_require__(21);
+    var __WEBPACK_IMPORTED_MODULE_0_redux__ = __webpack_require__(7), __WEBPACK_IMPORTED_MODULE_1__wrapMapToProps__ = __webpack_require__(22);
     __webpack_exports__.a = [ whenMapDispatchToPropsIsFunction, whenMapDispatchToPropsIsMissing, whenMapDispatchToPropsIsObject ];
 }, function(module, __webpack_exports__, __webpack_require__) {
     "use strict";
     function baseGetTag(value) {
         return null == value ? void 0 === value ? undefinedTag : nullTag : symToStringTag && symToStringTag in Object(value) ? Object(__WEBPACK_IMPORTED_MODULE_1__getRawTag_js__.a)(value) : Object(__WEBPACK_IMPORTED_MODULE_2__objectToString_js__.a)(value);
     }
-    var __WEBPACK_IMPORTED_MODULE_0__Symbol_js__ = __webpack_require__(18), __WEBPACK_IMPORTED_MODULE_1__getRawTag_js__ = __webpack_require__(57), __WEBPACK_IMPORTED_MODULE_2__objectToString_js__ = __webpack_require__(58), nullTag = "[object Null]", undefinedTag = "[object Undefined]", symToStringTag = __WEBPACK_IMPORTED_MODULE_0__Symbol_js__.a ? __WEBPACK_IMPORTED_MODULE_0__Symbol_js__.a.toStringTag : void 0;
+    var __WEBPACK_IMPORTED_MODULE_0__Symbol_js__ = __webpack_require__(19), __WEBPACK_IMPORTED_MODULE_1__getRawTag_js__ = __webpack_require__(57), __WEBPACK_IMPORTED_MODULE_2__objectToString_js__ = __webpack_require__(58), nullTag = "[object Null]", undefinedTag = "[object Undefined]", symToStringTag = __WEBPACK_IMPORTED_MODULE_0__Symbol_js__.a ? __WEBPACK_IMPORTED_MODULE_0__Symbol_js__.a.toStringTag : void 0;
     __webpack_exports__.a = baseGetTag;
 }, function(module, __webpack_exports__, __webpack_require__) {
     "use strict";
@@ -7626,7 +7626,7 @@ object-assign
         return unmasked && (isOwn ? value[symToStringTag] = tag : delete value[symToStringTag]), 
         result;
     }
-    var __WEBPACK_IMPORTED_MODULE_0__Symbol_js__ = __webpack_require__(18), objectProto = Object.prototype, hasOwnProperty = objectProto.hasOwnProperty, nativeObjectToString = objectProto.toString, symToStringTag = __WEBPACK_IMPORTED_MODULE_0__Symbol_js__.a ? __WEBPACK_IMPORTED_MODULE_0__Symbol_js__.a.toStringTag : void 0;
+    var __WEBPACK_IMPORTED_MODULE_0__Symbol_js__ = __webpack_require__(19), objectProto = Object.prototype, hasOwnProperty = objectProto.hasOwnProperty, nativeObjectToString = objectProto.toString, symToStringTag = __WEBPACK_IMPORTED_MODULE_0__Symbol_js__.a ? __WEBPACK_IMPORTED_MODULE_0__Symbol_js__.a.toStringTag : void 0;
     __webpack_exports__.a = getRawTag;
 }, function(module, __webpack_exports__, __webpack_require__) {
     "use strict";
@@ -7738,8 +7738,8 @@ object-assign
         };
     }
     __webpack_exports__.a = combineReducers;
-    var __WEBPACK_IMPORTED_MODULE_0__createStore__ = __webpack_require__(17);
-    __webpack_require__(7), __webpack_require__(19);
+    var __WEBPACK_IMPORTED_MODULE_0__createStore__ = __webpack_require__(18);
+    __webpack_require__(8), __webpack_require__(20);
 }, function(module, __webpack_exports__, __webpack_require__) {
     "use strict";
     function bindActionCreator(actionCreator, dispatch) {
@@ -7779,7 +7779,7 @@ object-assign
         };
     }
     __webpack_exports__.a = applyMiddleware;
-    var __WEBPACK_IMPORTED_MODULE_0__compose__ = __webpack_require__(20), _extends = Object.assign || function(target) {
+    var __WEBPACK_IMPORTED_MODULE_0__compose__ = __webpack_require__(21), _extends = Object.assign || function(target) {
         for (var i = 1; i < arguments.length; i++) {
             var source = arguments[i];
             for (var key in source) Object.prototype.hasOwnProperty.call(source, key) && (target[key] = source[key]);
@@ -7796,7 +7796,7 @@ object-assign
             return {};
         });
     }
-    var __WEBPACK_IMPORTED_MODULE_0__wrapMapToProps__ = __webpack_require__(21);
+    var __WEBPACK_IMPORTED_MODULE_0__wrapMapToProps__ = __webpack_require__(22);
     __webpack_exports__.a = [ whenMapStateToPropsIsFunction, whenMapStateToPropsIsMissing ];
 }, function(module, __webpack_exports__, __webpack_require__) {
     "use strict";
@@ -7821,7 +7821,7 @@ object-assign
             return defaultMergeProps;
         };
     }
-    var _extends = (__webpack_require__(22), Object.assign || function(target) {
+    var _extends = (__webpack_require__(23), Object.assign || function(target) {
         for (var i = 1; i < arguments.length; i++) {
             var source = arguments[i];
             for (var key in source) Object.prototype.hasOwnProperty.call(source, key) && (target[key] = source[key]);
@@ -7878,7 +7878,7 @@ object-assign
     __webpack_require__(72);
 }, function(module, __webpack_exports__, __webpack_require__) {
     "use strict";
-    __webpack_require__(5);
+    __webpack_require__(6);
 }, function(module, exports, __webpack_require__) {
     "use strict";
     function _interopRequireDefault(obj) {
@@ -7889,7 +7889,7 @@ object-assign
     Object.defineProperty(exports, "__esModule", {
         value: !0
     });
-    var _di_query_string = __webpack_require__(24), _di_query_string2 = _interopRequireDefault(_di_query_string), _di_is_string = __webpack_require__(8), _di_is_string2 = _interopRequireDefault(_di_is_string);
+    var _di_query_string = __webpack_require__(25), _di_query_string2 = _interopRequireDefault(_di_query_string), _di_is_string = __webpack_require__(9), _di_is_string2 = _interopRequireDefault(_di_is_string);
     exports.default = function(url) {
         var query = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : null;
         return void 0 === query || null === query || "" === query || !1 === query ? url : (query = (0, 
@@ -8047,7 +8047,7 @@ object-assign
     function RawTask() {
         this.task = null;
     }
-    var rawAsap = __webpack_require__(25), freeTasks = [], pendingErrors = [], requestErrorThrow = rawAsap.makeRequestCallFromTimer(throwFirstError);
+    var rawAsap = __webpack_require__(26), freeTasks = [], pendingErrors = [], requestErrorThrow = rawAsap.makeRequestCallFromTimer(throwFirstError);
     module.exports = asap, RawTask.prototype.call = function() {
         try {
             this.task.call();
@@ -8109,10 +8109,11 @@ object-assign
     Object.defineProperty(exports, "__esModule", {
         value: !0
     });
-    var _immutable = __webpack_require__(26), _constants = __webpack_require__(0), initialState = (0, 
+    var _immutable = __webpack_require__(27), _constants = __webpack_require__(0), initialState = (0, 
     _immutable.Map)({
         status: _constants.SKELETON_STATUS_LOADING,
-        title: "skeleton"
+        title: "skeleton",
+        error: !1
     });
     exports.default = function() {
         var state = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : initialState, action = arguments[1];
@@ -8135,7 +8136,7 @@ object-assign
     Object.defineProperty(exports, "__esModule", {
         value: !0
     });
-    var _constants = __webpack_require__(0), _change = __webpack_require__(27), _change2 = _interopRequireDefault(_change), _request = __webpack_require__(86), _request2 = _interopRequireDefault(_request);
+    var _constants = __webpack_require__(0), _change = __webpack_require__(5), _change2 = _interopRequireDefault(_change), _request = __webpack_require__(86), _request2 = _interopRequireDefault(_request);
     exports.default = function(config) {
         return function(dispatch) {
             dispatch({
@@ -8148,39 +8149,33 @@ object-assign
     };
 }, function(module, exports, __webpack_require__) {
     "use strict";
-    Object.defineProperty(exports, "__esModule", {
-        value: !0
-    });
-    var _di_request = __webpack_require__(23), _di_request2 = function(obj) {
+    function _interopRequireDefault(obj) {
         return obj && obj.__esModule ? obj : {
             default: obj
         };
-    }(_di_request), _constants = __webpack_require__(0);
+    }
+    Object.defineProperty(exports, "__esModule", {
+        value: !0
+    });
+    var _di_request = __webpack_require__(24), _di_request2 = _interopRequireDefault(_di_request), _constants = __webpack_require__(0), _change = __webpack_require__(5), _change2 = _interopRequireDefault(_change);
     exports.default = function() {
         return function(dispatch) {
-            dispatch({
-                type: _constants.SKELETON_TYPE_CHANGE,
-                data: {
-                    status: _constants.SKELETON_STATUS_LOADING
-                }
-            }), (0, _di_request2.default)({
+            dispatch((0, _change2.default)({
+                status: _constants.SKELETON_STATUS_LOADING
+            })), (0, _di_request2.default)({
                 url: "index.json"
             }).then(function(r1) {
-                return dispatch({
-                    type: _constants.SKELETON_TYPE_CHANGE,
-                    data: {
-                        status: _constants.SKELETON_STATUS_INIT
-                    }
-                }), r1.get();
+                return dispatch((0, _change2.default)({
+                    status: _constants.SKELETON_STATUS_INIT
+                })), r1.get();
             }).then(function(r2) {
-                dispatch({
-                    type: _constants.SKELETON_TYPE_CHANGE,
-                    data: {
-                        title: r2.responseBody.title
-                    }
-                });
+                dispatch((0, _change2.default)({
+                    title: r2.responseBody.title
+                }));
             }, function(r2) {
-                return console.log("er2", r2);
+                dispatch((0, _change2.default)({
+                    error: r2.error
+                }));
             });
         };
     };
@@ -8224,7 +8219,7 @@ object-assign
             return protoProps && defineProperties(Constructor.prototype, protoProps), staticProps && defineProperties(Constructor, staticProps), 
             Constructor;
         };
-    }(), _react = __webpack_require__(1), _react2 = _interopRequireDefault(_react), _redux = __webpack_require__(6), _reactRedux = __webpack_require__(13), _di_media_device = __webpack_require__(88), _inc = __webpack_require__(101), _inc2 = _interopRequireDefault(_inc), _change = __webpack_require__(27), _change2 = _interopRequireDefault(_change), _constants = __webpack_require__(0), _color = __webpack_require__(31), _Button = __webpack_require__(102), _Button2 = _interopRequireDefault(_Button), App = function(_Component) {
+    }(), _react = __webpack_require__(1), _react2 = _interopRequireDefault(_react), _redux = __webpack_require__(7), _reactRedux = __webpack_require__(14), _di_media_device = __webpack_require__(88), _inc = __webpack_require__(101), _inc2 = _interopRequireDefault(_inc), _change = __webpack_require__(5), _change2 = _interopRequireDefault(_change), _constants = __webpack_require__(0), _color = __webpack_require__(31), _Button = __webpack_require__(102), _Button2 = _interopRequireDefault(_Button), App = function(_Component) {
         function App(props) {
             _classCallCheck(this, App);
             var _this = _possibleConstructorReturn(this, (App.__proto__ || Object.getPrototypeOf(App)).call(this, props));
@@ -8332,7 +8327,7 @@ object-assign
         return typeof obj;
     } : function(obj) {
         return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
-    }, _debounce = __webpack_require__(89), _debounce2 = _interopRequireDefault(_debounce), _di_store = __webpack_require__(9), _di_store2 = _interopRequireDefault(_di_store), _di_media = __webpack_require__(98), config = function() {
+    }, _debounce = __webpack_require__(89), _debounce2 = _interopRequireDefault(_debounce), _di_store = __webpack_require__(10), _di_store2 = _interopRequireDefault(_di_store), _di_media = __webpack_require__(98), config = function() {
         var width = "object" === ("undefined" == typeof window ? "undefined" : _typeof(window)) ? window.innerWidth : null, height = "object" === ("undefined" == typeof window ? "undefined" : _typeof(window)) ? window.innerHeight : null;
         _di_store2.default.dispatch((0, _di_media.mediaHandleChange)("device", {
             width: width,
@@ -8464,7 +8459,7 @@ object-assign
     Object.defineProperty(exports, "__esModule", {
         value: !0
     }), exports.mediaHandleChange = exports.MEDIA_STORE = exports.MEDIA_TYPE_HANDLE_CHANGE = void 0;
-    var _di_store = __webpack_require__(9), _di_store2 = _interopRequireDefault(_di_store), _constants = __webpack_require__(10), _reducer = __webpack_require__(99), _reducer2 = _interopRequireDefault(_reducer), _actions = __webpack_require__(100);
+    var _di_store = __webpack_require__(10), _di_store2 = _interopRequireDefault(_di_store), _constants = __webpack_require__(11), _reducer = __webpack_require__(99), _reducer2 = _interopRequireDefault(_reducer), _actions = __webpack_require__(100);
     _di_store2.default.inject(_constants.MEDIA_STORE, _reducer2.default), exports.MEDIA_TYPE_HANDLE_CHANGE = _constants.MEDIA_TYPE_HANDLE_CHANGE, 
     exports.MEDIA_STORE = _constants.MEDIA_STORE, exports.mediaHandleChange = _actions.mediaHandleChange;
 }, function(module, exports, __webpack_require__) {
@@ -8472,7 +8467,7 @@ object-assign
     Object.defineProperty(exports, "__esModule", {
         value: !0
     });
-    var _immutable = __webpack_require__(26), _constants = __webpack_require__(10), _di_is_string = __webpack_require__(8), _di_is_string2 = function(obj) {
+    var _immutable = __webpack_require__(27), _constants = __webpack_require__(11), _di_is_string = __webpack_require__(9), _di_is_string2 = function(obj) {
         return obj && obj.__esModule ? obj : {
             default: obj
         };
@@ -8487,7 +8482,7 @@ object-assign
     Object.defineProperty(exports, "__esModule", {
         value: !0
     }), exports.mediaHandleChange = void 0;
-    var _constants = __webpack_require__(10);
+    var _constants = __webpack_require__(11);
     exports.mediaHandleChange = function(key, value) {
         return {
             type: _constants.MEDIA_TYPE_HANDLE_CHANGE,
@@ -8500,16 +8495,17 @@ object-assign
     Object.defineProperty(exports, "__esModule", {
         value: !0
     });
-    var _constants = __webpack_require__(0);
+    var _constants = __webpack_require__(0), _change = __webpack_require__(5), _change2 = function(obj) {
+        return obj && obj.__esModule ? obj : {
+            default: obj
+        };
+    }(_change);
     exports.default = function() {
         return function(dispatch, getState) {
             var state = getState()[_constants.SKELETON_STORE];
-            dispatch({
-                type: _constants.SKELETON_TYPE_CHANGE,
-                data: {
-                    done: state.get("done") + 1
-                }
-            });
+            dispatch((0, _change2.default)({
+                done: state.get("done") + 1
+            }));
         };
     };
 }, function(module, exports, __webpack_require__) {

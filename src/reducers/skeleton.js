@@ -9,7 +9,8 @@ import {
 
 const initialState = Map({
   status: SKELETON_STATUS_LOADING,
-  title: 'skeleton'
+  title: 'skeleton',
+  error: false
 });
 
 export default (state = initialState, action) => {
