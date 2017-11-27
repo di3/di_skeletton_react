@@ -8597,10 +8597,10 @@ object-assign
     Object.defineProperty(exports, "__esModule", {
         value: !0
     }), exports.getContainerStyle = void 0;
-    var _di_merge = __webpack_require__(105), _di_merge2 = _interopRequireDefault(_di_merge), _color = __webpack_require__(31), _disableTextSelection = __webpack_require__(107), _disableTextSelection2 = _interopRequireDefault(_disableTextSelection);
+    var _di_get_merge = __webpack_require__(105), _di_get_merge2 = _interopRequireDefault(_di_get_merge), _color = __webpack_require__(31), _disableTextSelection = __webpack_require__(107), _disableTextSelection2 = _interopRequireDefault(_disableTextSelection);
     exports.getContainerStyle = function(props, state) {
         var hover = state.hover, style = props.style;
-        return (0, _di_merge2.default)({
+        return (0, _di_get_merge2.default)({
             fontFamily: "Monospace",
             display: "block",
             margin: "auto",

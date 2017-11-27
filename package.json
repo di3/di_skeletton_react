@@ -48,7 +48,7 @@
   "dependencies": {
     "di_request": "file:./lib/js_lib/di_request",
     "di_media_device": "file:./lib/js_lib/di_media_device",
-    "di_merge": "file:./lib/js_lib/di_merge",
+    "di_get_merge": "file:./lib/js_lib/di_get_merge",
     "di_store": "file:./lib/js_lib/di_store",
     "immutable": "^3.8.2",
     "react": "^16.1.0",

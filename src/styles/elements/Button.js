@@ -1,4 +1,4 @@
-import m from 'di_merge';
+import m from 'di_get_merge';
 import { C1, C2, C3, C4 } from '../ci/color';
 import disableTextSelectionStyle from '../disableTextSelection';
 
