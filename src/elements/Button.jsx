@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import { C1, C2, C3, C4 } from '../style/ci/color';
-import disableTextSelectionStyle from '../style/disableTextSelection';
-import m from 'di_merge';
+import PropTypes from 'prop-types';
+
+import { getContainerStyle } from '../styles/elements/Button';
 
 class Button extends Component {
   constructor(props) {
@@ -24,25 +24,11 @@ class Button extends Component {
     this.props.onClick();
   }
 
-  getContainerStyle(style = {}) {
-    const { hover } = this.state;
-    return m({
-      fontFamily: "Monospace",
-      display:"block",
-      margin: "auto",
-      fontSize: "180%",
-      border: "4px solid " + (hover ? C1 : C2),
-      backgroundColor: hover ? C3 : C4,
-      color: hover ? C1 : C2,
-      cursor: hover ? "pointer" : null
-    }, disableTextSelectionStyle, style);
-  }
-
   render() {
-    const { children, style } = this.props;
+    const { children } = this.props;
     return (
       <div
-        style={this.getContainerStyle(style)}
+        style={getContainerStyle(this.props, this.state)}
         onClick={this.handleClick}
         onMouseOver={this.handleMouseOver}
         onMouseLeave={this.handleMouseLeave}
@@ -52,5 +38,9 @@ class Button extends Component {
     );
   }
 }
+
+Button.propTypes = {
+  style: PropTypes.object
+};
 
 export default Button;

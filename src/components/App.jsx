@@ -1,12 +1,18 @@
 import React, { Component } from 'react';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
+
 import { MEDIA_DEVICE_DESKTOP, MEDIA_STORE } from 'di_media_device';
 
 import incAction from '../actions/inc';
 import changeAction from '../actions/change';
 import { SKELETON_STORE } from '../constants';
-import { C1, C2 } from '../style/ci/color';
+import {
+  getContainerStyle,
+  getNameStyle,
+  getDoneStyle,
+  getButtonStyle
+} from '../styles/components/App';
 
 import Button from '../elements/Button';
 
@@ -27,46 +33,15 @@ class App extends Component {
   handleClick() {
     this.props.changeAction({done: 0});
   }
-  getContainerStyle(style) {
-    return {
-      fontFamily: "Monospace",
-      width: "200px",
-      display:"block",
-      margin: "auto",
-      fontSize: this.props.width > 700 ? "250%" : "180%",
-      textAlign: "center",
-      color: this.props.done % 2 ? C1 : C2
-    };
-  }
-  getButtonStyle() {
-    return {
-      fontSize: "120%",
-      fontWeight: "bold",
-      borderRadius: "3px"
-    };
-  }
-  getNameStyle() {
-    return {
-      fontWeight: "bold",
-      display: "block"
-    };
-  }
-  getDoneStyle() {
-    return {
-      padding: "10px",
-      display: "block",
-      fontSize: "150%"
-    };
-  }
 
   render() {
     const { name, done, title } = this.props;
     return (
-      <div style={this.getContainerStyle()}>
-        <span style={this.getNameStyle()}>{name}</span>
-        <span style={this.getNameStyle()}>{title}</span>
-        <span style={this.getDoneStyle()}>{done}</span>
-        <Button style={this.getButtonStyle()} onClick={this.handleClick}>reset</Button>
+      <div style={getContainerStyle(this.props)}>
+        <span style={getNameStyle()}>{name}</span>
+        <span style={getNameStyle()}>{title}</span>
+        <span style={getDoneStyle()}>{done}</span>
+        <Button style={getButtonStyle()} onClick={this.handleClick}>reset</Button>
       </div>
     );
   }
