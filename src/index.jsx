@@ -11,11 +11,9 @@ import App from './components/App';
 import { SKELETON_STORE } from './constants';
 store.inject(SKELETON_STORE, Skeleton);
 
-module.exports = {
-  create(config) {
-    store.dispatch(initAction(config));
-    let element = document.getElementById(config.container);
-    render(<Provider store={store}><App /></Provider>, element);
-  }
+export const init = (config) =>  {
+  store.dispatch(initAction(config));
+  let element = document.getElementById(config.container);
+  render(<Provider store={store}><App /></Provider>, element);
 }
 

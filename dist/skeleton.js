@@ -3072,16 +3072,18 @@ object-assign
             default: obj
         };
     }
+    Object.defineProperty(exports, "__esModule", {
+        value: !0
+    }), exports.init = void 0;
     var _react = __webpack_require__(1), _react2 = _interopRequireDefault(_react), _reactDom = __webpack_require__(34), _reactRedux = __webpack_require__(15), _di_request = __webpack_require__(24), _di_store = (_interopRequireDefault(_di_request), 
     __webpack_require__(11)), _di_store2 = _interopRequireDefault(_di_store), _skeleton = __webpack_require__(84), _skeleton2 = _interopRequireDefault(_skeleton), _init = __webpack_require__(85), _init2 = _interopRequireDefault(_init), _App = __webpack_require__(87), _App2 = _interopRequireDefault(_App), _constants = __webpack_require__(0);
-    _di_store2.default.inject(_constants.SKELETON_STORE, _skeleton2.default), module.exports = {
-        create: function(config) {
-            _di_store2.default.dispatch((0, _init2.default)(config));
-            var element = document.getElementById(config.container);
-            (0, _reactDom.render)(_react2.default.createElement(_reactRedux.Provider, {
-                store: _di_store2.default
-            }, _react2.default.createElement(_App2.default, null)), element);
-        }
+    _di_store2.default.inject(_constants.SKELETON_STORE, _skeleton2.default);
+    exports.init = function(config) {
+        _di_store2.default.dispatch((0, _init2.default)(config));
+        var element = document.getElementById(config.container);
+        (0, _reactDom.render)(_react2.default.createElement(_reactRedux.Provider, {
+            store: _di_store2.default
+        }, _react2.default.createElement(_App2.default, null)), element);
     };
 }, function(module, exports, __webpack_require__) {
     "use strict";
