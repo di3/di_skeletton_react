@@ -5,6 +5,7 @@ import { connect } from 'react-redux';
 import { MEDIA_STORE, MEDIA_GET_DEVICE } from 'di_media_device';
 
 import incAction from '../actions/inc';
+import resetAction from '../actions/reset';
 import changeAction from '../actions/change';
 import {
   SKELETON_STORE,
@@ -36,7 +37,7 @@ class App extends Component {
   }
 
   handleClick() {
-    this.props.changeAction({done: 0});
+    this.props.resetAction();
   }
 
   render() {
@@ -64,6 +65,7 @@ const mapStateToProps = (state) => {
 const mapDispatchToProps = (dispatch) => {
   return bindActionCreators({
     changeAction,
+    resetAction,
     incAction
   }, dispatch);
 };

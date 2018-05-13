@@ -23,7 +23,7 @@
     "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.24.1",
     "compression-webpack-plugin": "^1.0.1",
-    "di_request_fake": "file:./lib/di_request_fake",
+    "di_request_fake": "file:./lib/js_lib/di_request_fake",
     "enzyme": "^3.1.1",
     "enzyme-adapter-react-16": "^1.0.4",
     "eslint": "^4.10.0",

@@ -1,5 +1,5 @@
 import React from 'react';
-import index from 'index';
+import { init } from 'index';
 import requestFake, { set, reset } from 'di_request_fake';
 
 beforeEach(() => {
@@ -14,7 +14,7 @@ test('initial snapshots with timeout', async (done) => {
   var div = document.createElement('div');
   div.id = "SKELETON";
   document.body.appendChild(div);
-  index.create({container: "SKELETON", name: "skeleton"});
+  init({container: "SKELETON", name: "skeleton"});
   expect.assertions(2);
   expect(div).toMatchSnapshot();
   await setTimeout(() => {
@@ -26,7 +26,7 @@ test('initial snapshots with async timeout', async (done) => {
   var div = document.createElement('div');
   div.id = "SKELETON2";
   document.body.appendChild(div);
-  index.create({container: "SKELETON2", name: "skeleton"});
+  init({container: "SKELETON2", name: "skeleton"});
   expect.assertions(2);
   expect(div).toMatchSnapshot();
   await setTimeout(() => {
@@ -38,7 +38,7 @@ test('responsive snapshots with timeout', async (done) => {
   var div = document.createElement('div');
   div.id = "SKELETON3";
   document.body.appendChild(div);
-  index.create({container: "SKELETON3", name: "skeleton"});
+  init({container: "SKELETON3", name: "skeleton"});
 
   // Change the viewport to 500px.
   global.innerWidth = 500;

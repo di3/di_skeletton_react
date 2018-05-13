@@ -1,4 +1,8 @@
 {
+  "testPathIgnorePatterns": [
+    "/node_modules/",
+    "/lib/"
+  ],
   "moduleFileExtensions": [
     "js",
     "jsx"
