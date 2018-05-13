@@ -34,7 +34,8 @@ var SKELETON = function(modules) {
     });
     exports.SKELETON_STORE = "SKELETON_STORE", exports.SKELETON_TYPE_INIT = "SKELETON_TYPE_INIT", 
     exports.SKELETON_TYPE_CHANGE = "SKELETON_TYPE_CHANGE", exports.SKELETON_STATUS_LOADING = "SKELETON_STATUS_LOADING", 
-    exports.SKELETON_STATUS_INIT = "SKELETON_STATUS_INIT";
+    exports.SKELETON_STATUS_INIT = "SKELETON_STATUS_INIT", exports.SKELETON_GET_NAME = "SKELETON_GET_NAME", 
+    exports.SKELETON_GET_TITLE = "SKELETON_GET_TITLE", exports.SKELETON_GET_DONE = "SKELETON_GET_DONE";
 }, function(module, exports, __webpack_require__) {
     "use strict";
     module.exports = __webpack_require__(33);
@@ -8264,10 +8265,10 @@ object-assign
         } ]), App;
     }(_react.Component), mapStateToProps = function(state) {
         return {
-            name: state[_constants.SKELETON_STORE].get("name"),
-            title: state[_constants.SKELETON_STORE].get("title"),
-            done: state[_constants.SKELETON_STORE].get("done"),
-            width: state[_di_media_device.MEDIA_STORE].get("device").width
+            name: state[_constants.SKELETON_STORE].get(_constants.SKELETON_GET_NAME),
+            title: state[_constants.SKELETON_STORE].get(_constants.SKELETON_GET_TITLE),
+            done: state[_constants.SKELETON_STORE].get(_constants.SKELETON_GET_DONE),
+            width: state[_di_media_device.MEDIA_STORE].get(_di_media_device.MEDIA_GET_DEVICE).width
         };
     }, mapDispatchToProps = function(dispatch) {
         return (0, _redux.bindActionCreators)({

@@ -1,0 +1,3 @@
+[submodule "lib/js_lib"]
+	path = lib/js_lib
+	url = https://github.com/di3/di_js_lib
